@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Londra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Paulo Londra</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#biografia">Biografía</a></li>
+                <li><a href="#discografia">Discografía</a></li>
+                <li><a href="#imagenes">Imágenes</a></li>
+                <li><a href="#video">Videos</a></li>
+                <li><a href="#creador">Creador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="inicio">
+        <h2>Noticias 2025</h2>
+        <div class="noticias-container">
+            <div class="noticia">
+                <img src="audio/n1.webp" alt="Movistar Arena 2025">
+                <h3>Vuelve Paulo Londra para tocar con entradas en el Movistar Arena 2025: precios y cuándo toca</h3>
+                <p>Paulo Londra sorprende a sus fans con el lanzamiento de su nuevo álbum "Hombre en la Luna", un trabajo que explora nuevos sonidos y colaboraciones inesperadas. El álbum ha recibido elogios de la crítica y se ha posicionado rápidamente en los primeros lugares de las listas de éxitos.</p>
+            </div>
+            <div class="noticia">
+                <img src="audio/n2.avif" alt="Buenos Aires">
+                <h3>Paulo Londra regresa a Buenos Aires con un show imperdible tras seis años de ausencia</h3>
+                <p>Paulo Londra vuelve a Buenos Aires después de seis años de ausencia.</p>
+            </div>
+            <div class="noticia">
+                <img src="audio/n3.avif" alt="Madrid">
+                <h3>Paulo Londra y Karin Herrero, vistos jugando al baloncesto en las calles de Madrid</h3>
+                <p>El rapero argentino y el locutor de LOS40 han protagonizado un encuentro de lo más curioso</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="biografia" class="biografia">
+        <h2>Biografía</h2>
+        <div class="biografia-content">
+            <div class="biografia-text">
+                <p>Paulo Ezequiel Londra, nacido el 12 de abril de 1998 en Córdoba, Argentina, es un rapero y cantautor que ha dejado una marca imborrable en la escena musical latinoamericana. Desde temprana edad, mostró un gran interés por la música, influenciado por artistas como Eminem y 50 Cent.</p>
+                <p>Su carrera despegó en 2017 con el lanzamiento de "Relax", un sencillo que se viralizó rápidamente y lo catapultó a la fama. A partir de ahí, su ascenso fue meteórico, con éxitos como "Adán y Eva", "Nena Maldición" y "Tal Vez", que dominaron las listas de reproducción y acumularon millones de reproducciones en plataformas digitales.</p>
+                <p>En 2019, lanzó su álbum debut, "Homerun", que consolidó su posición como uno de los artistas más importantes del género urbano. El álbum incluye colaboraciones con artistas de renombre como De La Ghetto y Lenny Tavárez, y muestra la versatilidad de Londra para fusionar diferentes estilos musicales.</p>
+                 <p>A pesar de su éxito, Londra también ha enfrentado desafíos en su carrera, incluyendo una disputa legal con su antigua productora que lo mantuvo alejado de la música durante un tiempo. Sin embargo, en 2022 regresó con fuerza con el lanzamiento de "Plan A", un sencillo que rompió récords y demostró su resiliencia.</p>
+                <p>Con su estilo único y su habilidad para conectar con el público, Paulo Londra continúa siendo una figura influyente en la música latina, inspirando a jóvenes artistas y dejando un legado duradero.</p>
+            </div>
+            <div class="biografia-images">
+                <img src="audio/i1.jpg" alt="Paulo Londra en sus inicios">
+                <img src="audio/i2.jpg" alt="Paulo Londra en concierto">
+                <img src="audio/i3.jpg" alt="Paulo Londra en una sesión de fotos">
+            </div>
+        </div>
+    </section>
+
+    <section id="discografia" class="discografia">
+        <h2>Discografía</h2>
+        <div class="album" onclick="mostrarCanciones('homerun')">
+            <img src="homerun.jpg" alt="Homerun">
+            <p>Homerun (2019)</p>
+        </div>
+        <div class="album" onclick="mostrarCanciones('backToTheGame')">
+            <img src="audio/a2.png" alt="Back to the Game">
+            <p>Back to the Game (2022)</p>
+        </div>
+        <div class="album" onclick="mostrarCanciones('Versus')">
+            <img src="audio/a3.jpg" alt="Versus">
+            <p>Versus (2025)</p>
+        </div>
+    </section>
+
+    <div id="modal-canciones" class="modal-canciones">
+        <div class="modal-canciones-content">
+            <span class="close" onclick="cerrarModal()">×</span>
+            <div id="canciones-container">
+                <div id="lista-canciones" class="lista-canciones">
+                    </div>
+                <div id="contenido-cancion" class="contenido-cancion">
+                    <div id="reproductor-container">
+                        <audio id="audioPlayer" controls></audio>
+                    </div>
+                    <div id="letra-cancion" class="letra-cancion">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="imagenes" class="imagenes">
+        <h2>Galería de Imágenes</h2>
+        <div class="galeria">
+            <img src="audio/g1.jpg" alt="Imagen 1" class="imagen-galeria">
+            <img src="audio/g2.jpg" alt="Imagen 2" class="imagen-galeria">
+            <img src="audio/g3.jpg" alt="Imagen 2" class="imagen-galeria">
+            <img src="audio/g4.jpg" alt="Imagen 2" class="imagen-galeria">
+            <img src="audio/g5.jpg" alt="Imagen 2" class="imagen-galeria">
+            <img src="audio/g6.jpg" alt="Imagen 2" class="imagen-galeria">
+            <img src="audio/g7.jpg" alt="Imagen 2" class="imagen-galeria">
+            <img src="audio/g8.jpg" alt="Imagen 2" class="imagen-galeria">
+
+            </div>
+    </section>
+
+    <section id="video" class="video">
+        <h2>Videos</h2>
+        <video width="560" height="315" controls>
+            <source src="audio/v1.mp4" type="video/mp4">
+        </video>
+        <video width="560" height="315" controls>
+            <source src="audio/v2.mp4" type="video/mp4">
+        </video>
+        <video width="560" height="315" controls>
+            <source src="audio/v3.mp4" type="video/mp4">
+        </video>
+        <video width="560" height="315" controls>
+            <source src="audio/v4.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="creador" class="creador">
+        <h2>Creador</h2>
+        <img src="audio/foto.jpg" alt="Foto del Creador" style="width:150px; border-radius:50%;">
+        <p><strong>Nombre:</strong> Diego Antonio Martinez</p>
+        <p><strong>Institución:</strong> Instituto Tecnológico de Tuxtepec</p>
+        <p><strong>Correo:</strong> <a href="diegoantoniomartinez2002@gmail.com">diegoantoniomartinez2002@gmail.com</a> / <a href="L21350235@tuxtepec.tecnm.mx">L21350235@tuxtepec.tecnm.mx</a></p>
+        <p><strong>Teléfono:</strong> +52 287 139 9479</p>
+    
+        <h3>Sobre Mí</h3>
+        <p>
+            Soy un apasionado desarrollador web con interés en la creación de páginas web. Me encanta explorar nuevas tecnologías y aprender sobre las últimas tendencias en el desarrollo web. Además, disfruto jugar fútbol y correr en mi tiempo libre.
+        </p>
+    
+        <p>
+            Mi interés por el desarrollo web surgió a partir de una actividad docente en la universidad, donde descubrí el poder de la programación para crear soluciones innovadoras. Desde entonces, he dedicado tiempo a aprender nuevos lenguajes y frameworks, y a participar en proyectos que me permitan poner en práctica mis conocimientos.
+        </p>
+        <p>
+            Soy un gran fan de la música de Paulo Londra, lo cual me motiva e inspira en mi día a día.
+        </p>
+    
+        <h3>Experiencia y Proyectos</h3>
+        <p>
+            Durante mi servicio social en el Instituto Tecnológico de Tuxtepec, participé en el proyecto de "Creación de una Base de Datos del Café Ñeey", donde desarrollé habilidades en administración de bases de datos y planificación de proyectos.
+        </p>
+    
+        <h3>Metas y Aspiraciones</h3>
+        <p>
+            Mi meta es ser reconocido en el ámbito del desarrollo web y conseguir un buen trabajo que me permita seguir creciendo profesionalmente. Me apasiona la idea de crear soluciones innovadoras que tengan un impacto positivo en la sociedad.
+        </p>
+    </section>
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com/paulolondra"><img src="audio/r2.png" alt="Facebook"></a>
+            <a href="https://x.com/PauloLondra"><img src="audio/r3.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/paulolondra/#"><img src="audio/r1.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@PauloLondra"><img src="audio/r4.png" alt="YouTube"></a>
+        </div>
+        <p>&copy; 2025 Paulo Londra. Todos los derechos reservados.</p>
+    </footer>
+    <div id="overlay" class="overlay">
+        <span class="cerrar">&times;</span>
+        <img id="imagen-ampliada" class="imagen-ampliada" src="" alt="Imagen Ampliada">
+    </div>
+    
+    <script src="script.js"></script>
+    </body>
+</body>
+</html>
